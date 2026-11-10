@@ -4,16 +4,16 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.0"
+      version = "~> 6.24"
     }
   }
 
   backend "s3" {
-    bucket         = "hima-saa-rag-bucket"
-    key            = "saa-rag/terraform.tfstate"
-    region         = "us-east-1"
+    bucket       = "hima-saa-rag-bucket"
+    key          = "saa-rag/terraform.tfstate"
+    region       = "us-east-1"
     use_lockfile = true
-    encrypt        = true
+    encrypt      = true
   }
 }
 
