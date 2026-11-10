@@ -1,4 +1,4 @@
-# SAA RAG Assistant: Build Plan & Reference
+﻿# SAA RAG Assistant: Build Plan & Reference
 
 Reference doc.
 
@@ -281,3 +281,8 @@ Update this as I go.
 - [ ] Phase 4: Frontend + deploy
 - [ ] Phase 5: Eval + load test + cost
 - [ ] Phase 6: README + resume updated 
+
+- Embeddings: amazon.titan-embed-text-v2:0, 1024 dims 
+- Generation: us.amazon.nova-lite-v1:0 
+- Rerank: none available in us-east-1, so using an LLM judge (Nova Lite for now, Nova Pro to compare later)
+

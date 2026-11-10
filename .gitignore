@@ -40,3 +40,4 @@ eval/tmp/
 .DS_Store
 .idea/
 .vscode/
+.~lock.*#
