@@ -6,3 +6,12 @@ output "terms_table" { value = aws_dynamodb_table.terms.name }
 output "docstats_table" { value = aws_dynamodb_table.docstats.name }
 output "cache_table" { value = aws_dynamodb_table.cache.name }
 output "evallog_table" { value = aws_dynamodb_table.evallog.name }
+output "raw_bucket_arn" { value = aws_s3_bucket.raw.arn }
+output "vector_index_arn" { value = aws_s3vectors_index.chunks.index_arn }
+output "table_arns" {
+  value = [
+    aws_dynamodb_table.chunks.arn,
+    aws_dynamodb_table.terms.arn,
+    aws_dynamodb_table.docstats.arn,
+  ]
+}
