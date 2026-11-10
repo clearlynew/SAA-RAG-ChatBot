@@ -8,7 +8,7 @@ resource "aws_sqs_queue" "dlq" {
 
 resource "aws_sqs_queue" "ingest" {
   name                       = "${var.project}-ingest"
-  visibility_timeout_seconds = 1800 # 6x the Lambda timeout
+  visibility_timeout_seconds = 5400 # 6x the Lambda timeout
   redrive_policy = jsonencode({
     deadLetterTargetArn = aws_sqs_queue.dlq.arn
     maxReceiveCount     = 3
@@ -124,7 +124,7 @@ resource "aws_lambda_function" "ingest" {
   handler          = "handler.handler" # file handler.py, function handler
   filename         = data.archive_file.ingest.output_path
   source_code_hash = data.archive_file.ingest.output_base64sha256
-  timeout          = 300
+  timeout          = 900
   memory_size      = 512
 
   environment {
