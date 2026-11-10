@@ -1,0 +1,9 @@
+# Eval results
+
+34 questions, k=10, 756 chunks in index.
+
+| mode | hit@10 | MRR | precision@10 | recall@10 | avg ms |
+|---|---|---|---|---|---|
+| vector_only | 0.79 | 0.40 | 0.16 | 0.44 | 1218 |
+| keyword_only | 0.91 | 0.63 | 0.18 | 0.57 | 2899 |
+| hybrid | 0.88 | 0.56 | 0.18 | 0.52 | 3835 |

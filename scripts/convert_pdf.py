@@ -15,17 +15,21 @@ def slug(s):
 def clean(md):
     keep = []
     for line in md.split("\n"):
+        line = re.sub(r"</?mark>", "", line).replace("<br>", " ")   # strip leftover HTML
         s = line.strip()
         if re.fullmatch(r"\d{1,4}", s):                 # lone page numbers
             continue
-        if re.search(r"\.{4,}\s*\d+\s*$", s):           # table-of-contents lines
+        if re.search(r"\.{4,}\s*\d+\s*$", s):           # dotted table-of-contents lines
+            continue
+        if re.fullmatch(r"\|[^|]*\s\d{1,3}\s*\|", s):   # table-style contents rows
+            continue
+        if re.fullmatch(r"\|(\s*-+\s*\|)+", s):         # leftover |---| rows
             continue
         if re.match(r"#{1,6}\s", s):
             line = line.replace("**", "").replace("__", "")
         keep.append(line.rstrip())
     return re.sub(r"\n{3,}", "\n\n", "\n".join(keep)).strip() + "\n"
-
-
+    
 pdf = pathlib.Path(sys.argv[1])
 md = clean(pymupdf4llm.to_markdown(str(pdf), header=False, footer=False))
 

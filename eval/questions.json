@@ -1,0 +1,277 @@
+[
+  {
+    "id": "q001",
+    "question": "Which Amazon EC2 instance family is specifically engineered for deep learning inference workloads?",
+    "answer_phrases": [
+      "Inf2"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q002",
+    "question": "Which Amazon EC2 instance family is purpose-built for deep learning training workloads?",
+    "answer_phrases": [
+      "Trn1"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q003",
+    "question": "What object storage service provides 11 9s of data durability along with lifecycle tiering and WORM compliance via Object Lock?",
+    "answer_phrases": [
+      "Object Lock"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q004",
+    "question": "Which AWS serverless compute service automatically executes code in response to events without requiring server provisioning?",
+    "answer_phrases": [
+      "AWS Lambda"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q005",
+    "question": "What fully managed, elastic POSIX-compliant file system allows concurrent access from multiple EC2 instances and containers?",
+    "answer_phrases": [
+      "Amazon Elastic File System"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q006",
+    "question": "Which relational database engine features a self-healing storage system scaling up to 128TB and full compatibility with MySQL and PostgreSQL?",
+    "answer_phrases": [
+      "Amazon Aurora"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q007",
+    "question": "Which key-value and document NoSQL database provides single-digit millisecond performance at high scale?",
+    "answer_phrases": [
+      "Amazon DynamoDB"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q008",
+    "question": "Which managed in-memory caching engine supports both Redis and Memcached protocols for sub-millisecond data retrieval?",
+    "answer_phrases": [
+      "Amazon ElastiCache"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q009",
+    "question": "Which serverless interactive query service lets users analyze S3 data directly using standard SQL syntax?",
+    "answer_phrases": [
+      "Amazon Athena"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q010",
+    "question": "Which fully managed serverless AWS service provides API access to top foundation models alongside fine-tuning and guardrails?",
+    "answer_phrases": [
+      "Amazon Bedrock offers fully managed model customization",
+      "through Amazon Bedrock, a fully managed"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q011",
+    "question": "Which end-to-end machine learning platform enables developers to build, train, tune, and deploy custom ML models at scale?",
+    "answer_phrases": [
+      "a platform to build, train, and deploy ML models at scale"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q012",
+    "question": "What is the name of AWS's generative AI assistant built for enterprise data querying and software development acceleration?",
+    "answer_phrases": [
+      "generative AI-powered assistant for accelerating software development"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q013",
+    "question": "In a Retrieval-Augmented Generation (RAG) system, what purpose does the Vector Data Store serve?",
+    "answer_phrases": [
+      "vector data store"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q014",
+    "question": "What critical data transformation step must occur after document chunking before writing data into a vector index?",
+    "answer_phrases": [
+      "embedding model"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q015",
+    "question": "What is the main role of a Multi-Tenant Enterprise AI Gateway when deployed in front of foundation models?",
+    "answer_phrases": [
+      "AI Gateway"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q016",
+    "question": "Which component in an AI Gateway architecture caches semantic response pairs to reduce redundant LLM token costs?",
+    "answer_phrases": [
+      "semantic and request-level caching",
+      "prefix, and semantic levels"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q017",
+    "question": "Which perimeter protection service inspects incoming HTTP/S requests to defend AI API endpoints against common web exploits?",
+    "answer_phrases": [
+      "AWS WAF"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q018",
+    "question": "How should organizations continuously evaluate the functional performance of foundation models under GenOps best practice GENOPS01-BP01?",
+    "answer_phrases": [
+      "GENOPS01-BP01"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q019",
+    "question": "Which API call mechanism captures real-time end-user sentiment and quality feedback in Amazon Q?",
+    "answer_phrases": [
+      "PutFeedback"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q020",
+    "question": "Which two CloudWatch metrics track token consumption volumes for Foundation Model invocations?",
+    "answer_phrases": [
+      "InputTokenCount"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q021",
+    "question": "What request strategy should clients adopt to handle Foundation Model quota rate limits (InvocationThrottles) gracefully?",
+    "answer_phrases": [
+      "exponential backoff"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q022",
+    "question": "What dedicated AWS service capability helps teams manage, version, and evaluate prompt templates systematically?",
+    "answer_phrases": [
+      "Prompt Management"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q023",
+    "question": "What feature gives developers step-by-step insight into the reasoning paths and tool calls executed by autonomous AI agents?",
+    "answer_phrases": [
+      "TracePart"
+    ],
+    "type": "exact"
+  },
+  {
+    "id": "q024",
+    "question": "Which compute option is built to run trained neural networks in production at low cost?",
+    "answer_phrases": [
+      "Inf2"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": "q025",
+    "question": "Which EC2 instance family uses AWS Trainium accelerators for high-performance deep learning training?",
+    "answer_phrases": [
+      "Trn1 Instances",
+      "AWS Trainium accelerators"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": "q026",
+    "question": "How can I make stored files impossible to change or delete for a fixed period for regulatory reasons?",
+    "answer_phrases": [
+      "Object Lock"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": "q027",
+    "question": "Which shared network drive can many servers and containers read and write at the same time?",
+    "answer_phrases": [
+      "Amazon Elastic File System"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": "q028",
+    "question": "Which AWS chat helper can answer questions from my company's internal documents and help write code?",
+    "answer_phrases": [
+      "generative AI-powered assistant for accelerating software development"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": "q029",
+    "question": "How can I block malicious web requests such as SQL injection before they reach my AI application?",
+    "answer_phrases": [
+      "AWS WAF"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": "q030",
+    "question": "How can users send thumbs-up or thumbs-down ratings on assistant answers from code?",
+    "answer_phrases": [
+      "PutFeedback"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": "q031",
+    "question": "Which monitoring numbers show how much text my model calls are consuming?",
+    "answer_phrases": [
+      "InputTokenCount"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": "q032",
+    "question": "What should a client do to retry politely when the model API says it is overloaded?",
+    "answer_phrases": [
+      "exponential backoff"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": "q033",
+    "question": "How can I see why an autonomous agent chose an action and which tools it called?",
+    "answer_phrases": [
+      "TracePart"
+    ],
+    "type": "paraphrase"
+  },
+  {
+    "id": "q034",
+    "question": "How can an LLM application avoid redundant model invocations for semantically similar user queries?",
+    "answer_phrases": [
+      "semantic and request-level caching"
+    ],
+    "type": "paraphrase"
+  }
+]

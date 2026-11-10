@@ -1,0 +1,1493 @@
+[
+  {
+    "id": "q001",
+    "question": "Which Amazon EC2 instance family is specifically engineered for deep learning inference workloads?",
+    "relevant": [
+      "aws-overview#19#5",
+      "aws-overview#41#1",
+      "generative-ai-lens#30#8"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 4,
+        "retrieved": [
+          "aws-overview#28#31",
+          "aws-overview#28#34",
+          "generative-ai-lens#70#2",
+          "aws-overview#19#5",
+          "generative-ai-lens#30#8"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#19#5",
+          "generative-ai-lens#60#3",
+          "generative-ai-lens#70#2",
+          "aws-overview#28#31",
+          "aws-overview#19#4"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "aws-overview#28#31",
+          "aws-overview#19#5",
+          "generative-ai-lens#70#2",
+          "generative-ai-lens#30#8",
+          "aws-overview#28#34"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q002",
+    "question": "Which Amazon EC2 instance family is purpose-built for deep learning training workloads?",
+    "relevant": [
+      "aws-overview#19#6",
+      "aws-overview#41#1"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "aws-overview#28#31",
+          "aws-overview#28#34",
+          "generative-ai-lens#30#8",
+          "aws-overview#19#5",
+          "generative-ai-lens#70#2"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#19#6",
+          "aws-overview#19#5",
+          "aws-overview#28#31",
+          "aws-overview#28#34",
+          "generative-ai-lens#30#8"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 4,
+        "retrieved": [
+          "aws-overview#28#31",
+          "aws-overview#28#34",
+          "aws-overview#19#5",
+          "aws-overview#19#6",
+          "generative-ai-lens#30#8"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q003",
+    "question": "What object storage service provides 11 9s of data durability along with lifecycle tiering and WORM compliance via Object Lock?",
+    "relevant": [
+      "aws-overview#36#12"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#36#12",
+          "aws-overview#36#11",
+          "aws-overview#36#5",
+          "aws-overview#36#1",
+          "aws-overview#36#2"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#36#12",
+          "aws-overview#36#10",
+          "aws-overview#2#0",
+          "aws-overview#5#0",
+          "aws-overview#36#3"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#36#12",
+          "aws-overview#36#10",
+          "aws-overview#36#11",
+          "aws-overview#36#2",
+          "generative-ai-lens#71#4"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q004",
+    "question": "Which AWS serverless compute service automatically executes code in response to events without requiring server provisioning?",
+    "relevant": [
+      "aws-kms-best-practices#15#1",
+      "aws-kms-best-practices#15#2",
+      "aws-kms-best-practices#17#0",
+      "aws-overview#14#7",
+      "aws-overview#15#3",
+      "aws-overview#15#6",
+      "aws-overview#18#3",
+      "aws-overview#19#0",
+      "aws-overview#19#1",
+      "aws-overview#19#12",
+      "aws-overview#19#13",
+      "aws-overview#19#17",
+      "aws-overview#2#2",
+      "aws-overview#27#11",
+      "aws-overview#27#3",
+      "aws-overview#27#4",
+      "aws-overview#29#15",
+      "aws-overview#29#4",
+      "aws-overview#29#5",
+      "aws-overview#31#8",
+      "aws-overview#32#0",
+      "generative-ai-lens#31#1",
+      "generative-ai-lens#31#3",
+      "generative-ai-lens#34#26",
+      "generative-ai-lens#36#1",
+      "generative-ai-lens#39#8",
+      "generative-ai-lens#40#12",
+      "generative-ai-lens#42#1",
+      "generative-ai-lens#42#3",
+      "generative-ai-lens#42#4",
+      "generative-ai-lens#49#2",
+      "generative-ai-lens#53#1",
+      "generative-ai-lens#53#2",
+      "generative-ai-lens#62#1",
+      "generative-ai-lens#71#2",
+      "generative-ai-lens#71#5"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#19#13",
+          "aws-overview#19#14",
+          "aws-overview#19#11",
+          "aws-overview#19#10",
+          "aws-overview#19#12"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#19#13",
+          "aws-overview#22#7",
+          "aws-overview#19#11",
+          "aws-overview#29#14",
+          "aws-overview#19#10"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#19#13",
+          "aws-overview#19#11",
+          "aws-overview#19#10",
+          "aws-overview#19#2",
+          "aws-overview#29#14"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q005",
+    "question": "What fully managed, elastic POSIX-compliant file system allows concurrent access from multiple EC2 instances and containers?",
+    "relevant": [
+      "aws-overview#2#7",
+      "aws-overview#31#9",
+      "aws-overview#36#1",
+      "aws-overview#36#3"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "aws-overview#36#4",
+          "aws-overview#36#3",
+          "aws-overview#19#3",
+          "aws-overview#36#9",
+          "aws-overview#36#2"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#36#3",
+          "aws-overview#36#2",
+          "aws-overview#36#1",
+          "aws-overview#19#1",
+          "aws-overview#36#8"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#36#3",
+          "aws-overview#36#2",
+          "aws-overview#36#8",
+          "aws-overview#36#1",
+          "aws-overview#19#3"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q006",
+    "question": "Which relational database engine features a self-healing storage system scaling up to 128TB and full compatibility with MySQL and PostgreSQL?",
+    "relevant": [
+      "aws-overview#2#2",
+      "aws-overview#22#0",
+      "aws-overview#22#1",
+      "aws-overview#22#2",
+      "aws-overview#22#3",
+      "aws-overview#29#1",
+      "aws-overview#31#2",
+      "aws-overview#36#1",
+      "aws-overview#41#1"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#22#2",
+          "aws-overview#22#10",
+          "aws-overview#22#1",
+          "aws-overview#22#9",
+          "aws-overview#22#8"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#22#3",
+          "aws-overview#22#10",
+          "aws-overview#22#1",
+          "aws-overview#22#2",
+          "aws-overview#22#14"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "aws-overview#22#10",
+          "aws-overview#22#2",
+          "aws-overview#22#1",
+          "aws-overview#22#3",
+          "aws-overview#22#14"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q007",
+    "question": "Which key-value and document NoSQL database provides single-digit millisecond performance at high scale?",
+    "relevant": [
+      "aws-overview#14#11",
+      "aws-overview#14#12",
+      "aws-overview#19#17",
+      "aws-overview#2#2",
+      "aws-overview#22#0",
+      "aws-overview#22#1",
+      "aws-overview#22#3",
+      "aws-overview#22#4",
+      "aws-overview#27#3",
+      "aws-overview#27#4",
+      "aws-overview#29#1",
+      "aws-overview#36#1",
+      "generative-ai-lens#39#7",
+      "generative-ai-lens#39#9"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 5,
+        "retrieved": [
+          "generative-ai-lens#62#4",
+          "aws-overview#22#9",
+          "aws-overview#22#8",
+          "aws-overview#22#13",
+          "aws-overview#22#4"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#22#1",
+          "aws-overview#22#4",
+          "aws-overview#22#8",
+          "aws-overview#22#5",
+          "aws-overview#22#2"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "aws-overview#22#8",
+          "aws-overview#22#4",
+          "aws-overview#22#9",
+          "aws-overview#22#5",
+          "aws-overview#22#1"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q008",
+    "question": "Which managed in-memory caching engine supports both Redis and Memcached protocols for sub-millisecond data retrieval?",
+    "relevant": [
+      "aws-overview#18#2",
+      "aws-overview#2#2",
+      "aws-overview#22#0",
+      "aws-overview#22#1",
+      "aws-overview#22#4",
+      "aws-overview#22#5",
+      "aws-overview#22#6",
+      "aws-overview#41#0",
+      "generative-ai-lens#30#15",
+      "generative-ai-lens#30#18"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#22#5",
+          "aws-overview#22#8",
+          "aws-overview#22#6",
+          "aws-overview#22#4",
+          "aws-overview#22#13"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#22#5",
+          "aws-overview#22#8",
+          "aws-overview#22#4",
+          "aws-overview#22#1",
+          "aws-overview#22#6"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#22#5",
+          "aws-overview#22#8",
+          "aws-overview#22#4",
+          "aws-overview#22#6",
+          "aws-overview#22#1"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q009",
+    "question": "Which serverless interactive query service lets users analyze S3 data directly using standard SQL syntax?",
+    "relevant": [
+      "aws-overview#14#0",
+      "aws-overview#14#15",
+      "aws-overview#14#2",
+      "aws-overview#2#0",
+      "aws-overview#28#24",
+      "generative-ai-lens#34#23",
+      "generative-ai-lens#40#5",
+      "generative-ai-lens#40#6",
+      "generative-ai-lens#59#5",
+      "generative-ai-lens#71#2",
+      "generative-ai-lens#71#5",
+      "generative-ai-lens#71#6"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "aws-overview#14#8",
+          "generative-ai-lens#71#2",
+          "aws-overview#14#1",
+          "aws-overview#14#11",
+          "generative-ai-lens#34#23"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "aws-overview#14#1",
+          "aws-overview#14#0",
+          "aws-overview#14#8",
+          "aws-overview#14#5",
+          "generative-ai-lens#32#2"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 3,
+        "retrieved": [
+          "aws-overview#14#8",
+          "aws-overview#14#1",
+          "aws-overview#14#0",
+          "aws-overview#14#9",
+          "generative-ai-lens#71#2"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q010",
+    "question": "Which fully managed serverless AWS service provides API access to top foundation models alongside fine-tuning and guardrails?",
+    "relevant": [
+      "aws-overview#28#15",
+      "generative-ai-lens#61#1"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "aws-overview#29#1",
+          "aws-overview#29#14",
+          "aws-overview#29#5",
+          "aws-overview#29#8",
+          "aws-overview#29#7"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "generative-ai-lens#30#7",
+          "generative-ai-lens#61#1",
+          "generative-ai-lens#45#10",
+          "generative-ai-lens#30#5",
+          "generative-ai-lens#30#22"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#61#1",
+          "aws-overview#28#1",
+          "aws-overview#29#1",
+          "generative-ai-lens#30#7",
+          "aws-overview#29#14"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q011",
+    "question": "Which end-to-end machine learning platform enables developers to build, train, tune, and deploy custom ML models at scale?",
+    "relevant": [
+      "aws-overview#28#30"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "aws-overview#28#28",
+          "aws-overview#28#34",
+          "aws-overview#28#27",
+          "generative-ai-lens#43#2",
+          "aws-overview#28#29"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 3,
+        "retrieved": [
+          "aws-overview#28#34",
+          "aws-overview#28#35",
+          "aws-overview#28#30",
+          "aws-overview#28#33",
+          "aws-overview#28#28"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "aws-overview#28#34",
+          "aws-overview#28#28",
+          "aws-overview#28#31",
+          "aws-overview#28#29",
+          "aws-overview#28#7"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q012",
+    "question": "What is the name of AWS's generative AI assistant built for enterprise data querying and software development acceleration?",
+    "relevant": [
+      "aws-overview#28#18"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "generative-ai-lens#42#11",
+          "generative-ai-lens#32#2",
+          "generative-ai-lens#32#1",
+          "aws-overview#28#1",
+          "aws-overview#28#0"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "aws-overview#28#24",
+          "aws-overview#28#18",
+          "generative-ai-lens#34#6",
+          "aws-overview#24#2",
+          "aws-overview#28#36"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#28#18",
+          "generative-ai-lens#42#11",
+          "aws-overview#28#24",
+          "generative-ai-lens#32#2",
+          "generative-ai-lens#32#1"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q013",
+    "question": "In a Retrieval-Augmented Generation (RAG) system, what purpose does the Vector Data Store serve?",
+    "relevant": [
+      "generative-ai-lens#40#1",
+      "generative-ai-lens#40#3",
+      "generative-ai-lens#40#4",
+      "generative-ai-lens#45#15",
+      "generative-ai-lens#6#1",
+      "generative-ai-lens#62#4",
+      "generative-ai-lens#62#5",
+      "generative-ai-lens#62#8"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 4,
+        "retrieved": [
+          "generative-ai-lens#20#2",
+          "generative-ai-lens#67#0",
+          "generative-ai-lens#6#3",
+          "generative-ai-lens#62#5",
+          "generative-ai-lens#62#1"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "generative-ai-lens#6#3",
+          "generative-ai-lens#45#11",
+          "generative-ai-lens#67#0",
+          "generative-ai-lens#20#2",
+          "generative-ai-lens#43#2"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "generative-ai-lens#6#3",
+          "generative-ai-lens#20#2",
+          "generative-ai-lens#67#0",
+          "generative-ai-lens#45#11",
+          "generative-ai-lens#62#1"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q014",
+    "question": "What critical data transformation step must occur after document chunking before writing data into a vector index?",
+    "relevant": [
+      "generative-ai-lens#34#12",
+      "generative-ai-lens#34#13",
+      "generative-ai-lens#34#20",
+      "generative-ai-lens#34#21",
+      "generative-ai-lens#34#5",
+      "generative-ai-lens#34#6",
+      "generative-ai-lens#34#9",
+      "generative-ai-lens#40#17",
+      "generative-ai-lens#62#5",
+      "generative-ai-lens#62#6",
+      "generative-ai-lens#62#7",
+      "generative-ai-lens#62#8",
+      "generative-ai-lens#67#1"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "generative-ai-lens#34#10",
+          "generative-ai-lens#34#5",
+          "generative-ai-lens#34#11",
+          "generative-ai-lens#34#9",
+          "generative-ai-lens#67#1"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "generative-ai-lens#33#4",
+          "generative-ai-lens#34#5",
+          "generative-ai-lens#62#1",
+          "generative-ai-lens#67#1",
+          "generative-ai-lens#62#2"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#34#5",
+          "generative-ai-lens#62#1",
+          "generative-ai-lens#67#1",
+          "generative-ai-lens#34#10",
+          "generative-ai-lens#34#9"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q015",
+    "question": "What is the main role of a Multi-Tenant Enterprise AI Gateway when deployed in front of foundation models?",
+    "relevant": [
+      "generative-ai-lens#30#13"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 3,
+        "retrieved": [
+          "generative-ai-lens#30#15",
+          "generative-ai-lens#30#14",
+          "generative-ai-lens#30#13",
+          "generative-ai-lens#30#8",
+          "generative-ai-lens#30#2"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 4,
+        "retrieved": [
+          "generative-ai-lens#30#2",
+          "generative-ai-lens#30#14",
+          "generative-ai-lens#30#20",
+          "generative-ai-lens#30#13",
+          "generative-ai-lens#30#15"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 4,
+        "retrieved": [
+          "generative-ai-lens#30#14",
+          "generative-ai-lens#30#15",
+          "generative-ai-lens#30#2",
+          "generative-ai-lens#30#13",
+          "generative-ai-lens#30#21"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q016",
+    "question": "Which component in an AI Gateway architecture caches semantic response pairs to reduce redundant LLM token costs?",
+    "relevant": [
+      "generative-ai-lens#30#15",
+      "generative-ai-lens#30#18"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 3,
+        "retrieved": [
+          "generative-ai-lens#66#5",
+          "generative-ai-lens#60#4",
+          "generative-ai-lens#30#15",
+          "generative-ai-lens#66#6",
+          "generative-ai-lens#30#14"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#30#15",
+          "generative-ai-lens#30#18",
+          "generative-ai-lens#66#5",
+          "generative-ai-lens#66#4",
+          "generative-ai-lens#35#2"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "generative-ai-lens#66#5",
+          "generative-ai-lens#30#15",
+          "generative-ai-lens#66#6",
+          "generative-ai-lens#66#4",
+          "generative-ai-lens#30#18"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q017",
+    "question": "Which perimeter protection service inspects incoming HTTP/S requests to defend AI API endpoints against common web exploits?",
+    "relevant": [
+      "aws-overview#2#7",
+      "aws-overview#35#0",
+      "aws-overview#35#24",
+      "aws-overview#35#26",
+      "aws-overview#35#27",
+      "aws-overview#35#28",
+      "aws-overview#41#1",
+      "generative-ai-lens#30#20",
+      "generative-ai-lens#36#2"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 5,
+        "retrieved": [
+          "generative-ai-lens#45#17",
+          "generative-ai-lens#45#18",
+          "generative-ai-lens#45#1",
+          "generative-ai-lens#45#9",
+          "generative-ai-lens#30#20"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#30#20",
+          "aws-overview#35#23",
+          "generative-ai-lens#48#4",
+          "generative-ai-lens#30#14",
+          "aws-overview#35#18"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#30#20",
+          "aws-overview#35#17",
+          "generative-ai-lens#45#4",
+          "generative-ai-lens#45#6",
+          "generative-ai-lens#45#17"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q018",
+    "question": "How should organizations continuously evaluate the functional performance of foundation models under GenOps best practice GENOPS01-BP01?",
+    "relevant": [
+      "generative-ai-lens#2#2",
+      "generative-ai-lens#39#0",
+      "generative-ai-lens#39#4"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "generative-ai-lens#39#1",
+          "generative-ai-lens#60#10",
+          "generative-ai-lens#60#0",
+          "generative-ai-lens#40#6",
+          "generative-ai-lens#42#7"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#39#0",
+          "generative-ai-lens#60#1",
+          "generative-ai-lens#74#0",
+          "generative-ai-lens#65#0",
+          "generative-ai-lens#2#2"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#39#0",
+          "generative-ai-lens#60#1",
+          "generative-ai-lens#60#10",
+          "generative-ai-lens#59#6",
+          "generative-ai-lens#39#4"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q019",
+    "question": "Which API call mechanism captures real-time end-user sentiment and quality feedback in Amazon Q?",
+    "relevant": [
+      "generative-ai-lens#39#7",
+      "generative-ai-lens#39#9"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#39#7",
+          "generative-ai-lens#39#9",
+          "generative-ai-lens#39#8",
+          "aws-overview#17#2",
+          "aws-overview#28#18"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#39#7",
+          "generative-ai-lens#31#7",
+          "generative-ai-lens#36#2",
+          "generative-ai-lens#19#0",
+          "generative-ai-lens#39#8"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#39#7",
+          "generative-ai-lens#39#9",
+          "generative-ai-lens#39#8",
+          "generative-ai-lens#31#7",
+          "generative-ai-lens#39#6"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q020",
+    "question": "Which two CloudWatch metrics track token consumption volumes for Foundation Model invocations?",
+    "relevant": [
+      "generative-ai-lens#40#10",
+      "generative-ai-lens#40#9"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "generative-ai-lens#40#5",
+          "generative-ai-lens#40#7",
+          "generative-ai-lens#40#6",
+          "generative-ai-lens#64#1",
+          "generative-ai-lens#47#2"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#40#10",
+          "generative-ai-lens#40#7",
+          "generative-ai-lens#47#2",
+          "generative-ai-lens#40#9",
+          "generative-ai-lens#40#8"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 4,
+        "retrieved": [
+          "generative-ai-lens#40#7",
+          "generative-ai-lens#47#2",
+          "generative-ai-lens#40#5",
+          "generative-ai-lens#40#10",
+          "generative-ai-lens#45#18"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q021",
+    "question": "What request strategy should clients adopt to handle Foundation Model quota rate limits (InvocationThrottles) gracefully?",
+    "relevant": [
+      "generative-ai-lens#40#18",
+      "generative-ai-lens#52#3",
+      "generative-ai-lens#54#3"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 5,
+        "retrieved": [
+          "generative-ai-lens#52#4",
+          "generative-ai-lens#52#0",
+          "generative-ai-lens#52#2",
+          "generative-ai-lens#52#1",
+          "generative-ai-lens#52#3"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "generative-ai-lens#52#1",
+          "generative-ai-lens#40#18",
+          "generative-ai-lens#52#2",
+          "generative-ai-lens#52#3",
+          "generative-ai-lens#40#15"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 3,
+        "retrieved": [
+          "generative-ai-lens#52#1",
+          "generative-ai-lens#52#2",
+          "generative-ai-lens#40#18",
+          "generative-ai-lens#52#3",
+          "generative-ai-lens#52#0"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q022",
+    "question": "What dedicated AWS service capability helps teams manage, version, and evaluate prompt templates systematically?",
+    "relevant": [
+      "generative-ai-lens#2#3",
+      "generative-ai-lens#37#3",
+      "generative-ai-lens#37#6",
+      "generative-ai-lens#37#7",
+      "generative-ai-lens#41#1",
+      "generative-ai-lens#41#2",
+      "generative-ai-lens#41#3",
+      "generative-ai-lens#41#4",
+      "generative-ai-lens#42#7",
+      "generative-ai-lens#42#8",
+      "generative-ai-lens#48#0",
+      "generative-ai-lens#48#1",
+      "generative-ai-lens#48#2",
+      "generative-ai-lens#51#2",
+      "generative-ai-lens#51#4",
+      "generative-ai-lens#54#0",
+      "generative-ai-lens#54#3",
+      "generative-ai-lens#54#4",
+      "generative-ai-lens#55#0",
+      "generative-ai-lens#55#1",
+      "generative-ai-lens#55#2",
+      "generative-ai-lens#55#3",
+      "generative-ai-lens#55#4",
+      "generative-ai-lens#55#5",
+      "generative-ai-lens#66#10",
+      "generative-ai-lens#66#2",
+      "generative-ai-lens#66#7",
+      "generative-ai-lens#67#2"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#41#1",
+          "generative-ai-lens#55#2",
+          "generative-ai-lens#41#0",
+          "generative-ai-lens#55#0",
+          "generative-ai-lens#48#2"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "generative-ai-lens#41#0",
+          "generative-ai-lens#41#2",
+          "generative-ai-lens#42#2",
+          "generative-ai-lens#42#1",
+          "generative-ai-lens#41#3"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "generative-ai-lens#41#0",
+          "generative-ai-lens#41#1",
+          "generative-ai-lens#41#2",
+          "generative-ai-lens#41#3",
+          "generative-ai-lens#55#0"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q023",
+    "question": "What feature gives developers step-by-step insight into the reasoning paths and tool calls executed by autonomous AI agents?",
+    "relevant": [
+      "generative-ai-lens#41#5",
+      "generative-ai-lens#41#6"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#41#5",
+          "generative-ai-lens#26#0",
+          "generative-ai-lens#41#7",
+          "generative-ai-lens#31#6",
+          "generative-ai-lens#31#5"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#41#5",
+          "generative-ai-lens#26#0",
+          "generative-ai-lens#25#0",
+          "generative-ai-lens#49#1",
+          "generative-ai-lens#41#6"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#41#5",
+          "generative-ai-lens#26#0",
+          "generative-ai-lens#41#7",
+          "generative-ai-lens#27#0",
+          "generative-ai-lens#41#6"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q024",
+    "question": "Which compute option is built to run trained neural networks in production at low cost?",
+    "relevant": [
+      "aws-overview#19#5",
+      "aws-overview#41#1",
+      "generative-ai-lens#30#8"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "generative-ai-lens#61#0",
+          "generative-ai-lens#65#7",
+          "generative-ai-lens#30#9",
+          "generative-ai-lens#70#0",
+          "generative-ai-lens#61#5"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "aws-overview#28#28",
+          "aws-overview#19#15",
+          "generative-ai-lens#42#8",
+          "aws-overview#28#18",
+          "aws-overview#28#34"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "aws-overview#28#34",
+          "generative-ai-lens#65#6",
+          "generative-ai-lens#61#0",
+          "aws-overview#28#28",
+          "generative-ai-lens#65#7"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q025",
+    "question": "Which EC2 instance family uses AWS Trainium accelerators for high-performance deep learning training?",
+    "relevant": [
+      "aws-overview#19#6",
+      "aws-overview#41#1",
+      "generative-ai-lens#61#4"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 4,
+        "retrieved": [
+          "aws-overview#28#31",
+          "aws-overview#28#34",
+          "generative-ai-lens#30#8",
+          "aws-overview#19#6",
+          "generative-ai-lens#70#2"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#19#6",
+          "generative-ai-lens#30#8",
+          "aws-overview#19#5",
+          "generative-ai-lens#70#7",
+          "generative-ai-lens#61#4"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#19#6",
+          "generative-ai-lens#30#8",
+          "aws-overview#28#31",
+          "aws-overview#19#5",
+          "aws-overview#28#34"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q026",
+    "question": "How can I make stored files impossible to change or delete for a fixed period for regulatory reasons?",
+    "relevant": [
+      "aws-overview#36#12"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 3,
+        "retrieved": [
+          "aws-kms-best-practices#17#2",
+          "aws-kms-best-practices#9#1",
+          "aws-overview#36#12",
+          "aws-overview#36#11",
+          "generative-ai-lens#45#12"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "aws-kms-best-practices#17#2",
+          "aws-overview#36#12",
+          "aws-overview#17#4",
+          "aws-kms-best-practices#9#1",
+          "aws-kms-best-practices#17#1"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "aws-kms-best-practices#17#2",
+          "aws-overview#36#12",
+          "aws-kms-best-practices#9#1",
+          "aws-kms-best-practices#17#1",
+          "aws-kms-best-practices#15#1"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q027",
+    "question": "Which shared network drive can many servers and containers read and write at the same time?",
+    "relevant": [
+      "aws-overview#2#7",
+      "aws-overview#31#9",
+      "aws-overview#36#1",
+      "aws-overview#36#3"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "aws-overview#21#2",
+          "aws-overview#36#7",
+          "aws-overview#36#4",
+          "aws-overview#36#6",
+          "aws-overview#36#8"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "aws-overview#36#12",
+          "aws-overview#36#6",
+          "aws-overview#19#12",
+          "aws-overview#32#5",
+          "aws-overview#19#11"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "aws-overview#36#6",
+          "aws-overview#21#2",
+          "aws-overview#21#1",
+          "aws-overview#36#12",
+          "aws-overview#36#7"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q028",
+    "question": "Which AWS chat helper can answer questions from my company's internal documents and help write code?",
+    "relevant": [
+      "aws-overview#28#18"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "aws-overview#29#15",
+          "aws-overview#17#2",
+          "aws-overview#17#4",
+          "aws-overview#17#1",
+          "aws-overview#23#4"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 5,
+        "retrieved": [
+          "generative-ai-lens#31#3",
+          "aws-overview#29#22",
+          "generative-ai-lens#34#1",
+          "aws-overview#29#15",
+          "aws-overview#28#18"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "aws-overview#29#15",
+          "aws-overview#28#18",
+          "aws-overview#23#1",
+          "generative-ai-lens#31#3",
+          "aws-overview#17#2"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q029",
+    "question": "How can I block malicious web requests such as SQL injection before they reach my AI application?",
+    "relevant": [
+      "aws-overview#2#7",
+      "aws-overview#35#0",
+      "aws-overview#35#24",
+      "aws-overview#35#26",
+      "aws-overview#35#27",
+      "aws-overview#35#28",
+      "aws-overview#41#1",
+      "generative-ai-lens#30#20",
+      "generative-ai-lens#36#2"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "generative-ai-lens#44#1",
+          "generative-ai-lens#46#4",
+          "generative-ai-lens#50#2",
+          "generative-ai-lens#50#3",
+          "generative-ai-lens#48#3"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "aws-overview#35#27",
+          "aws-overview#35#28",
+          "generative-ai-lens#48#4",
+          "generative-ai-lens#30#20",
+          "generative-ai-lens#48#3"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 5,
+        "retrieved": [
+          "generative-ai-lens#48#3",
+          "generative-ai-lens#48#4",
+          "generative-ai-lens#34#15",
+          "generative-ai-lens#44#1",
+          "aws-overview#35#27"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q030",
+    "question": "How can users send thumbs-up or thumbs-down ratings on assistant answers from code?",
+    "relevant": [
+      "generative-ai-lens#39#7",
+      "generative-ai-lens#39#9"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 3,
+        "retrieved": [
+          "generative-ai-lens#39#6",
+          "generative-ai-lens#31#7",
+          "generative-ai-lens#39#7",
+          "generative-ai-lens#39#9",
+          "generative-ai-lens#66#9"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "generative-ai-lens#39#6",
+          "generative-ai-lens#34#1",
+          "aws-overview#17#3",
+          "aws-overview#28#18",
+          "aws-overview#17#2"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 5,
+        "retrieved": [
+          "generative-ai-lens#39#6",
+          "aws-overview#17#2",
+          "generative-ai-lens#31#7",
+          "generative-ai-lens#34#1",
+          "generative-ai-lens#39#7"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q031",
+    "question": "Which monitoring numbers show how much text my model calls are consuming?",
+    "relevant": [
+      "generative-ai-lens#40#10",
+      "generative-ai-lens#40#9"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "generative-ai-lens#40#5",
+          "generative-ai-lens#61#6",
+          "generative-ai-lens#40#6",
+          "generative-ai-lens#40#7",
+          "aws-overview#28#38"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "generative-ai-lens#31#3",
+          "aws-overview#28#38",
+          "aws-overview#28#21",
+          "generative-ai-lens#31#6",
+          "aws-overview#32#1"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "aws-overview#28#38",
+          "generative-ai-lens#31#6",
+          "generative-ai-lens#40#5",
+          "generative-ai-lens#31#3",
+          "generative-ai-lens#61#6"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q032",
+    "question": "What should a client do to retry politely when the model API says it is overloaded?",
+    "relevant": [
+      "generative-ai-lens#40#18",
+      "generative-ai-lens#52#3",
+      "generative-ai-lens#54#3"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#40#18",
+          "generative-ai-lens#40#12",
+          "generative-ai-lens#60#5",
+          "generative-ai-lens#52#2",
+          "generative-ai-lens#54#7"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 4,
+        "retrieved": [
+          "generative-ai-lens#51#2",
+          "generative-ai-lens#40#14",
+          "aws-overview#24#2",
+          "generative-ai-lens#40#18",
+          "generative-ai-lens#40#15"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 1,
+        "retrieved": [
+          "generative-ai-lens#40#18",
+          "generative-ai-lens#40#15",
+          "generative-ai-lens#40#14",
+          "generative-ai-lens#40#17",
+          "generative-ai-lens#51#2"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q033",
+    "question": "How can I see why an autonomous agent chose an action and which tools it called?",
+    "relevant": [
+      "generative-ai-lens#41#5",
+      "generative-ai-lens#41#6"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "generative-ai-lens#26#0",
+          "generative-ai-lens#41#5",
+          "generative-ai-lens#27#0",
+          "generative-ai-lens#49#1",
+          "generative-ai-lens#41#7"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 3,
+        "retrieved": [
+          "generative-ai-lens#24#0",
+          "generative-ai-lens#26#0",
+          "generative-ai-lens#41#5",
+          "generative-ai-lens#27#0",
+          "generative-ai-lens#54#2"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": 2,
+        "retrieved": [
+          "generative-ai-lens#26#0",
+          "generative-ai-lens#41#5",
+          "generative-ai-lens#27#0",
+          "generative-ai-lens#24#0",
+          "generative-ai-lens#49#1"
+        ]
+      }
+    }
+  },
+  {
+    "id": "q034",
+    "question": "How can an LLM application avoid redundant model invocations for semantically similar user queries?",
+    "relevant": [
+      "generative-ai-lens#30#15"
+    ],
+    "modes": {
+      "vector_only": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "generative-ai-lens#60#4",
+          "generative-ai-lens#42#8",
+          "generative-ai-lens#72#0",
+          "generative-ai-lens#66#4",
+          "generative-ai-lens#42#9"
+        ]
+      },
+      "keyword_only": {
+        "first_relevant_rank": 4,
+        "retrieved": [
+          "generative-ai-lens#34#5",
+          "generative-ai-lens#34#6",
+          "generative-ai-lens#45#18",
+          "generative-ai-lens#30#15",
+          "generative-ai-lens#49#0"
+        ]
+      },
+      "hybrid": {
+        "first_relevant_rank": null,
+        "retrieved": [
+          "generative-ai-lens#25#0",
+          "generative-ai-lens#66#5",
+          "generative-ai-lens#72#2",
+          "generative-ai-lens#60#4",
+          "generative-ai-lens#34#5"
+        ]
+      }
+    }
+  }
+]
