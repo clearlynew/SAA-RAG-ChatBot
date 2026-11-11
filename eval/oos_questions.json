@@ -1,0 +1,54 @@
+[
+  {
+    "id": "o001",
+    "question": "Who won the 2022 FIFA World Cup?"
+  },
+  {
+    "id": "o002",
+    "question": "What is a good recipe for banana bread?"
+  },
+  {
+    "id": "o003",
+    "question": "How do I reverse a linked list in Python?"
+  },
+  {
+    "id": "o004",
+    "question": "What is the capital of Australia?"
+  },
+  {
+    "id": "o005",
+    "question": "What is the hourly price of an m5.large EC2 instance in us-east-1?"
+  },
+  {
+    "id": "o006",
+    "question": "How do I configure Azure Active Directory conditional access policies?"
+  },
+  {
+    "id": "o007",
+    "question": "What kubectl command scales a Kubernetes deployment to 5 replicas?"
+  },
+  {
+    "id": "o008",
+    "question": "How do I configure Google Cloud Armor security policies?"
+  },
+  {
+    "id": "o009",
+    "question": "How much does AWS Lambda cost per million requests?"
+  },
+  {
+    "id": "o010",
+    "question": "What is the default limit on the number of VPCs per Region?"
+  },
+  {
+    "id": "o012",
+    "question": "How do I set up AWS Direct Connect with a link aggregation group?"
+  },
+  {
+    "id": "o013",
+    "question": "Which AWS Region has the lowest latency from Mumbai?"
+  },
+  {
+    "id": "o014",
+    "question": "What are the steps to migrate an Oracle database to Aurora using DMS?"
+  }
+]

@@ -84,7 +84,8 @@
     "id": "q011",
     "question": "Which end-to-end machine learning platform enables developers to build, train, tune, and deploy custom ML models at scale?",
     "answer_phrases": [
-      "a platform to build, train, and deploy ML models at scale"
+      "a platform to build, train, and deploy ML models at scale",
+      "provides all of the components used for ML in a single toolset"
     ],
     "type": "exact"
   },
@@ -215,6 +216,7 @@
     "question": "Which shared network drive can many servers and containers read and write at the same time?",
     "answer_phrases": [
       "Amazon Elastic File System"
+     , "share files between thousands of Amazon EC2 instances"
     ],
     "type": "paraphrase"
   },

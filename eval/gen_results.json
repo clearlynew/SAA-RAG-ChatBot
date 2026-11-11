@@ -1,0 +1,423 @@
+{
+  "in": [
+    {
+      "id": "q001",
+      "question": "Which Amazon EC2 instance family is specifically engineered for deep learning inference workloads?",
+      "answer": "Inf2 Instances are purpose-built for deep learning inference [1].",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Compute"
+      ],
+      "latency_ms": 8469
+    },
+    {
+      "id": "q003",
+      "question": "What object storage service provides 11 9s of data durability along with lifecycle tiering and WORM compliance via Object Lock?",
+      "answer": "Amazon Simple Storage Service (Amazon S3) provides 11 9s of data durability along with lifecycle tiering and WORM compliance via Object Lock [1][2].",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Storage",
+        "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Storage"
+      ],
+      "latency_ms": 6404
+    },
+    {
+      "id": "q005",
+      "question": "What fully managed, elastic POSIX-compliant file system allows concurrent access from multiple EC2 instances and containers?",
+      "answer": "Amazon Elastic File System (Amazon EFS) provides a simple, scalable, elastic file system for Linux-based workloads for use with AWS Cloud services and on-premises resources [1].",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Storage"
+      ],
+      "latency_ms": 6246
+    },
+    {
+      "id": "q007",
+      "question": "Which key-value and document NoSQL database provides single-digit millisecond performance at high scale?",
+      "answer": "Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale [1][2].",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Databases",
+        "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Databases"
+      ],
+      "latency_ms": 5353
+    },
+    {
+      "id": "q009",
+      "question": "Which serverless interactive query service lets users analyze S3 data directly using standard SQL syntax?",
+      "answer": "Amazon Athena lets users analyze S3 data directly using standard SQL syntax [1][2][3].",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Analytics",
+        "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Analytics",
+        "[3] generative-ai-lens > Generative AI Lens > Sustainability > Consume sustainable data processing and storage services"
+      ],
+      "latency_ms": 5735
+    },
+    {
+      "id": "q011",
+      "question": "Which end-to-end machine learning platform enables developers to build, train, tune, and deploy custom ML models at scale?",
+      "answer": "Amazon SageMaker enables developers to build, train, tune, and deploy custom ML models at scale [2][3].",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Machine Learning (ML) and Artificial Intelligence (AI)",
+        "[3] aws-overview > Overview of Amazon Web Services > AWS services by category > Machine Learning (ML) and Artificial Intelligence (AI)"
+      ],
+      "latency_ms": 5633
+    },
+    {
+      "id": "q013",
+      "question": "In a Retrieval-Augmented Generation (RAG) system, what purpose does the Vector Data Store serve?",
+      "answer": "In a Retrieval-Augmented Generation (RAG) system, the Vector Data Store serves the purpose of efficient storage and retrieval of high-dimensional vector embeddings, which are used in semantic search and retrieval tasks [1].",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[1] generative-ai-lens > Generative AI Lens > Definitions"
+      ],
+      "latency_ms": 5528
+    },
+    {
+      "id": "q015",
+      "question": "What is the main role of a Multi-Tenant Enterprise AI Gateway when deployed in front of foundation models?",
+      "answer": "The main role of a Multi-Tenant Enterprise AI Gateway when deployed in front of foundation models is to securely route inference requests across multiple foundation models and deployment backends [3].",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[3] generative-ai-lens > Generative AI Lens > Scenarios > Multi-tenant generative AI platform scenario"
+      ],
+      "latency_ms": 5632
+    },
+    {
+      "id": "q017",
+      "question": "Which perimeter protection service inspects incoming HTTP/S requests to defend AI API endpoints against common web exploits?",
+      "answer": "AWS WAF inspects incoming HTTP/S requests to defend AI API endpoints against common web exploits [1][2].",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[1] generative-ai-lens > Generative AI Lens > Scenarios > Multi-tenant generative AI platform scenario",
+        "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Security, identity, and compliance"
+      ],
+      "latency_ms": 6142
+    },
+    {
+      "id": "q019",
+      "question": "Which API call mechanism captures real-time end-user sentiment and quality feedback in Amazon Q?",
+      "answer": "The `PutFeedback` API action captures real-time end-user sentiment and quality feedback in Amazon Q [1].",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[1] generative-ai-lens > Generative AI Lens > Operational excellence > Model performance evaluation"
+      ],
+      "latency_ms": 5531
+    },
+    {
+      "id": "q021",
+      "question": "What request strategy should clients adopt to handle Foundation Model quota rate limits (InvocationThrottles) gracefully?",
+      "answer": "Clients should implement request buffering using a message queue service to handle Foundation Model quota rate limits gracefully [1].",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[1] generative-ai-lens > Generative AI Lens > Reliability > Manage throughput quotas"
+      ],
+      "latency_ms": 5624
+    },
+    {
+      "id": "q023",
+      "question": "What feature gives developers step-by-step insight into the reasoning paths and tool calls executed by autonomous AI agents?",
+      "answer": "Tracing provides a detailed view of the agent's step-by-step reasoning process [1].",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[1] generative-ai-lens > Generative AI Lens > Operational excellence > Observability in workloads"
+      ],
+      "latency_ms": 5840
+    },
+    {
+      "id": "q025",
+      "question": "Which EC2 instance family uses AWS Trainium accelerators for high-performance deep learning training?",
+      "answer": "Trn1 Instances use AWS Trainium accelerators for high-performance deep learning training [1].",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Compute"
+      ],
+      "latency_ms": 5641
+    },
+    {
+      "id": "q027",
+      "question": "Which shared network drive can many servers and containers read and write at the same time?",
+      "answer": "Amazon EFS [1]",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Storage"
+      ],
+      "latency_ms": 5531
+    },
+    {
+      "id": "q029",
+      "question": "How can I block malicious web requests such as SQL injection before they reach my AI application?",
+      "answer": "You can block malicious web requests such as SQL injection before they reach your AI application using AWS WAF [1].",
+      "refused": false,
+      "reason": null,
+      "no_citations": false,
+      "top_judge_score": 10.0,
+      "grounding": {
+        "supported": true,
+        "unsupported_claims": []
+      },
+      "sources": [
+        "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Security, identity, and compliance"
+      ],
+      "latency_ms": 5836
+    }
+  ],
+  "out": [
+    {
+      "id": "o001",
+      "question": "Who won the 2022 FIFA World Cup?",
+      "answer": "I couldn't find the answer to that in the AWS whitepapers I have indexed, so I won't guess.",
+      "refused": true,
+      "reason": "low_relevance",
+      "no_citations": false,
+      "top_judge_score": 0.0,
+      "grounding": null,
+      "sources": [],
+      "latency_ms": 3583
+    },
+    {
+      "id": "o002",
+      "question": "What is a good recipe for banana bread?",
+      "answer": "I couldn't find the answer to that in the AWS whitepapers I have indexed, so I won't guess.",
+      "refused": true,
+      "reason": "low_relevance",
+      "no_citations": false,
+      "top_judge_score": 0.0,
+      "grounding": null,
+      "sources": [],
+      "latency_ms": 3274
+    },
+    {
+      "id": "o003",
+      "question": "How do I reverse a linked list in Python?",
+      "answer": "I couldn't find the answer to that in the AWS whitepapers I have indexed, so I won't guess.",
+      "refused": true,
+      "reason": "low_relevance",
+      "no_citations": false,
+      "top_judge_score": 0.0,
+      "grounding": null,
+      "sources": [],
+      "latency_ms": 3484
+    },
+    {
+      "id": "o004",
+      "question": "What is the capital of Australia?",
+      "answer": "I couldn't find the answer to that in the AWS whitepapers I have indexed, so I won't guess.",
+      "refused": true,
+      "reason": "low_relevance",
+      "no_citations": false,
+      "top_judge_score": 0.0,
+      "grounding": null,
+      "sources": [],
+      "latency_ms": 2969
+    },
+    {
+      "id": "o005",
+      "question": "What is the hourly price of an m5.large EC2 instance in us-east-1?",
+      "answer": "I couldn't find the answer to that in the AWS whitepapers I have indexed, so I won't guess.",
+      "refused": true,
+      "reason": "low_relevance",
+      "no_citations": false,
+      "top_judge_score": 0.0,
+      "grounding": null,
+      "sources": [],
+      "latency_ms": 4300
+    },
+    {
+      "id": "o006",
+      "question": "How do I configure Azure Active Directory conditional access policies?",
+      "answer": "I couldn't find the answer to that in the AWS whitepapers I have indexed, so I won't guess.",
+      "refused": true,
+      "reason": "low_relevance",
+      "no_citations": false,
+      "top_judge_score": 0.0,
+      "grounding": null,
+      "sources": [],
+      "latency_ms": 4506
+    },
+    {
+      "id": "o007",
+      "question": "What kubectl command scales a Kubernetes deployment to 5 replicas?",
+      "answer": "I couldn't find the answer to that in the AWS whitepapers I have indexed, so I won't guess.",
+      "refused": true,
+      "reason": "low_relevance",
+      "no_citations": false,
+      "top_judge_score": 0.0,
+      "grounding": null,
+      "sources": [],
+      "latency_ms": 3993
+    },
+    {
+      "id": "o008",
+      "question": "How do I configure Google Cloud Armor security policies?",
+      "answer": "I couldn't find the answer to that in the AWS whitepapers I have indexed, so I won't guess.",
+      "refused": true,
+      "reason": "low_relevance",
+      "no_citations": false,
+      "top_judge_score": 0.0,
+      "grounding": null,
+      "sources": [],
+      "latency_ms": 3890
+    },
+    {
+      "id": "o009",
+      "question": "How much does AWS Lambda cost per million requests?",
+      "answer": "I couldn't find the answer to that in the AWS whitepapers I have indexed, so I won't guess.",
+      "refused": true,
+      "reason": "model_refused",
+      "no_citations": false,
+      "top_judge_score": 7.0,
+      "grounding": null,
+      "sources": [],
+      "latency_ms": 5120
+    },
+    {
+      "id": "o010",
+      "question": "What is the default limit on the number of VPCs per Region?",
+      "answer": "I couldn't find the answer to that in the AWS whitepapers I have indexed, so I won't guess.",
+      "refused": true,
+      "reason": "low_relevance",
+      "no_citations": false,
+      "top_judge_score": 0.0,
+      "grounding": null,
+      "sources": [],
+      "latency_ms": 3788
+    },
+    {
+      "id": "o012",
+      "question": "How do I set up AWS Direct Connect with a link aggregation group?",
+      "answer": "I couldn't find the answer to that in the AWS whitepapers I have indexed, so I won't guess.",
+      "refused": true,
+      "reason": "model_refused",
+      "no_citations": false,
+      "top_judge_score": 5.0,
+      "grounding": null,
+      "sources": [],
+      "latency_ms": 5119
+    },
+    {
+      "id": "o013",
+      "question": "Which AWS Region has the lowest latency from Mumbai?",
+      "answer": "I couldn't find the answer to that in the AWS whitepapers I have indexed, so I won't guess.",
+      "refused": true,
+      "reason": "low_relevance",
+      "no_citations": false,
+      "top_judge_score": 0.0,
+      "grounding": null,
+      "sources": [],
+      "latency_ms": 3481
+    },
+    {
+      "id": "o014",
+      "question": "What are the steps to migrate an Oracle database to Aurora using DMS?",
+      "answer": "I couldn't find the answer to that in the AWS whitepapers I have indexed, so I won't guess.",
+      "refused": true,
+      "reason": "model_refused",
+      "no_citations": false,
+      "top_judge_score": 8.0,
+      "grounding": null,
+      "sources": [],
+      "latency_ms": 4709
+    }
+  ]
+}
