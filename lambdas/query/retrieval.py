@@ -1,6 +1,7 @@
 import json
 import os
 from collections import defaultdict
+from rerank import rerank
 
 import boto3
 from boto3.dynamodb.conditions import Key
@@ -20,6 +21,7 @@ DOCSTATS_TABLE = os.environ.get("DOCSTATS_TABLE", "saa-rag-docstats")
 K_VECTOR = int(os.environ.get("K_VECTOR", 20))
 K_KEYWORD = int(os.environ.get("K_KEYWORD", 20))
 RRF_K = int(os.environ.get("RRF_K", 60))
+RERANK_POOL = int(os.environ.get("RERANK_POOL", 15))
 MAX_DF_RATIO = 0.5   # skip words that appear in more than half of all chunks
 
 cfg = Config(retries={"max_attempts": 8, "mode": "adaptive"})
@@ -107,12 +109,16 @@ def fetch_chunks(ids):
 
 
 def retrieve(question, mode="hybrid", k=10):
-    """mode: vector_only | keyword_only | hybrid. Returns the top-k chunks."""
-    v = vector_search(question) if mode in ("vector_only", "hybrid") else []
-    kw = keyword_search(question) if mode in ("keyword_only", "hybrid") else []
-    merged = rrf_merge([lst for lst in (v, kw) if lst], k=RRF_K)[:k]
+    """mode: vector_only | keyword_only | hybrid | hybrid_rerank. Returns the top-k chunks."""
+    use_vector = mode in ("vector_only", "hybrid", "hybrid_rerank")
+    use_keyword = mode in ("keyword_only", "hybrid", "hybrid_rerank")
+    pool = max(k, RERANK_POOL) if mode == "hybrid_rerank" else k
+
+    v = vector_search(question) if use_vector else []
+    kw = keyword_search(question) if use_keyword else []
+    merged = rrf_merge([lst for lst in (v, kw) if lst], k=RRF_K)[:pool]
     texts = fetch_chunks([cid for cid, _ in merged])
-    return [
+    hits = [
         {
             "chunk_id": cid,
             "score": score,
@@ -123,3 +129,6 @@ def retrieve(question, mode="hybrid", k=10):
         }
         for cid, score in merged if cid in texts
     ]
+    if mode == "hybrid_rerank":
+        hits = rerank(question, hits, top_n=k)     # 15 candidates in, best k out
+    return hits

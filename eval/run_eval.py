@@ -14,7 +14,7 @@ if not os.environ.get("VECTOR_BUCKET"):
 import boto3
 from retrieval import CHUNKS_TABLE, retrieve
 
-MODES = ["vector_only", "keyword_only", "hybrid"]
+MODES = ["vector_only", "keyword_only", "hybrid", "hybrid_rerank"]
 
 
 def norm(text):
