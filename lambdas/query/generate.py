@@ -78,6 +78,11 @@ def generate(question, chunks):
     if "INSUFFICIENT_CONTEXT" in text:
         return _refusal("model_refused", top, chunks)
 
+    # Layer 2b: answers must be plain prose. JSON or a code fence means a
+    # format instruction from the question got through, so refuse.
+    if text.startswith("{") or text.startswith("[{") or "```" in text:
+        return _refusal("format_violation", top, chunks)
+
     cited = cited_numbers(text, len(chunks))
 
     # Layer 3: an answer that cites no passage is not grounded, so refuse it

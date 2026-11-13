@@ -15,7 +15,7 @@
       "sources": [
         "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Compute"
       ],
-      "latency_ms": 5913
+      "latency_ms": 5914
     },
     {
       "id": "q003",
@@ -33,7 +33,7 @@
         "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Storage",
         "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Storage"
       ],
-      "latency_ms": 5303
+      "latency_ms": 6023
     },
     {
       "id": "q005",
@@ -50,7 +50,7 @@
       "sources": [
         "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Storage"
       ],
-      "latency_ms": 5424
+      "latency_ms": 5898
     },
     {
       "id": "q007",
@@ -68,12 +68,12 @@
         "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Databases",
         "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Databases"
       ],
-      "latency_ms": 4501
+      "latency_ms": 4711
     },
     {
       "id": "q009",
       "question": "Which serverless interactive query service lets users analyze S3 data directly using standard SQL syntax?",
-      "answer": "Amazon Athena is the serverless interactive query service that lets users analyze S3 data directly using standard SQL syntax [1][2].",
+      "answer": "Amazon Athena is the serverless interactive query service that lets users analyze S3 data directly using standard SQL syntax [1][2][3].",
       "refused": false,
       "reason": null,
       "no_citations": false,
@@ -84,9 +84,10 @@
       },
       "sources": [
         "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Analytics",
-        "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Analytics"
+        "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Analytics",
+        "[3] generative-ai-lens > Generative AI Lens > Sustainability > Consume sustainable data processing and storage services"
       ],
-      "latency_ms": 4952
+      "latency_ms": 5223
     },
     {
       "id": "q011",
@@ -104,7 +105,7 @@
         "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Machine Learning (ML) and Artificial Intelligence (AI)",
         "[3] aws-overview > Overview of Amazon Web Services > AWS services by category > Machine Learning (ML) and Artificial Intelligence (AI)"
       ],
-      "latency_ms": 4977
+      "latency_ms": 5325
     },
     {
       "id": "q013",
@@ -121,7 +122,7 @@
       "sources": [
         "[1] generative-ai-lens > Generative AI Lens > Definitions"
       ],
-      "latency_ms": 4607
+      "latency_ms": 4829
     },
     {
       "id": "q015",
@@ -138,7 +139,7 @@
       "sources": [
         "[3] generative-ai-lens > Generative AI Lens > Scenarios > Multi-tenant generative AI platform scenario"
       ],
-      "latency_ms": 4931
+      "latency_ms": 5165
     },
     {
       "id": "q017",
@@ -156,7 +157,7 @@
         "[1] generative-ai-lens > Generative AI Lens > Scenarios > Multi-tenant generative AI platform scenario",
         "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Security, identity, and compliance"
       ],
-      "latency_ms": 5364
+      "latency_ms": 5640
     },
     {
       "id": "q019",
@@ -173,12 +174,12 @@
       "sources": [
         "[1] generative-ai-lens > Generative AI Lens > Operational excellence > Model performance evaluation"
       ],
-      "latency_ms": 4812
+      "latency_ms": 4921
     },
     {
       "id": "q021",
       "question": "What request strategy should clients adopt to handle Foundation Model quota rate limits (InvocationThrottles) gracefully?",
-      "answer": "Implement request buffering using a message queue service to handle traffic spikes and maintain consistent performance [1].",
+      "answer": "Implement request buffering using a message queue service to handle Foundation Model quota rate limits gracefully [1][2][3].",
       "refused": false,
       "reason": null,
       "no_citations": false,
@@ -188,9 +189,11 @@
         "unsupported_claims": []
       },
       "sources": [
-        "[1] generative-ai-lens > Generative AI Lens > Reliability > Manage throughput quotas"
+        "[1] generative-ai-lens > Generative AI Lens > Reliability > Manage throughput quotas",
+        "[2] generative-ai-lens > Generative AI Lens > Reliability > Manage throughput quotas",
+        "[3] generative-ai-lens > Generative AI Lens > Reliability > Manage throughput quotas"
       ],
-      "latency_ms": 5350
+      "latency_ms": 5121
     },
     {
       "id": "q023",
@@ -208,7 +211,7 @@
         "[1] generative-ai-lens > Generative AI Lens > Operational excellence > Observability in workloads",
         "[3] generative-ai-lens > Generative AI Lens > Operational excellence > Observability in workloads"
       ],
-      "latency_ms": 5221
+      "latency_ms": 6040
     },
     {
       "id": "q025",
@@ -230,7 +233,7 @@
     {
       "id": "q027",
       "question": "Which shared network drive can many servers and containers read and write at the same time?",
-      "answer": "Amazon EFS can be read and written to by many servers and containers simultaneously [1].",
+      "answer": "Amazon Elastic File System (Amazon EFS) can be used by many servers and containers to read and write at the same time [1].",
       "refused": false,
       "reason": null,
       "no_citations": false,
@@ -242,12 +245,12 @@
       "sources": [
         "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Storage"
       ],
-      "latency_ms": 4097
+      "latency_ms": 4299
     },
     {
       "id": "q029",
       "question": "How can I block malicious web requests such as SQL injection before they reach my AI application?",
-      "answer": "Use AWS WAF to block malicious web requests such as SQL injection before they reach your AI application [1].",
+      "answer": "Use AWS WAF to block malicious web requests such as SQL injection before they reach your AI application [1][4].",
       "refused": false,
       "reason": null,
       "no_citations": false,
@@ -257,9 +260,10 @@
         "unsupported_claims": []
       },
       "sources": [
-        "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Security, identity, and compliance"
+        "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Security, identity, and compliance",
+        "[4] generative-ai-lens > Generative AI Lens > Scenarios > Multi-tenant generative AI platform scenario"
       ],
-      "latency_ms": 5017
+      "latency_ms": 5221
     }
   ],
   "out": [
@@ -273,7 +277,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 2764
+      "latency_ms": 2868
     },
     {
       "id": "o002",
@@ -285,7 +289,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 2457
+      "latency_ms": 2662
     },
     {
       "id": "o003",
@@ -297,7 +301,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 2654
+      "latency_ms": 2868
     },
     {
       "id": "o004",
@@ -309,7 +313,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 2259
+      "latency_ms": 2454
     },
     {
       "id": "o005",
@@ -321,7 +325,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 3378
+      "latency_ms": 3476
     },
     {
       "id": "o006",
@@ -333,7 +337,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 3583
+      "latency_ms": 3489
     },
     {
       "id": "o007",
@@ -345,7 +349,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 2945
+      "latency_ms": 3171
     },
     {
       "id": "o008",
@@ -357,7 +361,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 2994
+      "latency_ms": 3176
     },
     {
       "id": "o009",
@@ -366,10 +370,10 @@
       "refused": true,
       "reason": "model_refused",
       "no_citations": false,
-      "top_judge_score": 7.0,
+      "top_judge_score": 10.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 3912
+      "latency_ms": 4912
     },
     {
       "id": "o010",
@@ -381,7 +385,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 3096
+      "latency_ms": 3170
     },
     {
       "id": "o011",
@@ -393,7 +397,7 @@
       "top_judge_score": 5.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 4359
+      "latency_ms": 4216
     },
     {
       "id": "o012",
@@ -405,7 +409,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 2766
+      "latency_ms": 2756
     },
     {
       "id": "o013",
@@ -417,7 +421,7 @@
       "top_judge_score": 8.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 3890
+      "latency_ms": 3773
     },
     {
       "id": "o014",
@@ -429,7 +433,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 2764
+      "latency_ms": 2912
     }
   ]
 }
