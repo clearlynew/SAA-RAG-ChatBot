@@ -2,6 +2,8 @@ import json
 import os
 from collections import defaultdict
 from rerank import rerank
+from concurrent.futures import ThreadPoolExecutor
+from spellfix import correct_token
 
 import boto3
 from boto3.dynamodb.conditions import Key
@@ -21,6 +23,7 @@ DOCSTATS_TABLE = os.environ.get("DOCSTATS_TABLE", "saa-rag-docstats")
 K_VECTOR = int(os.environ.get("K_VECTOR", 20))
 K_KEYWORD = int(os.environ.get("K_KEYWORD", 20))
 RRF_K = int(os.environ.get("RRF_K", 60))
+SPELLFIX = os.environ.get("SPELLFIX", "1") == "1"
 RERANK_POOL = int(os.environ.get("RERANK_POOL", 15))
 MAX_DF_RATIO = 0.5   # skip words that appear in more than half of all chunks
 
@@ -83,7 +86,12 @@ def keyword_search(question, k=K_KEYWORD):
     n = len(lengths)
     avg = sum(lengths.values()) / n
     scores = defaultdict(float)
-    for term in set(tokenize(question)):
+
+    tokens = tokenize(question)                          # NEW
+    if SPELLFIX:                                         # NEW
+        tokens = [correct_token(t) for t in tokens]      # NEW
+
+    for term in set(tokens):                             # CHANGED (was set(tokenize(question)))
         postings = query_term(term)
         df = len(postings)
         if df == 0 or df > MAX_DF_RATIO * n:
@@ -114,8 +122,11 @@ def retrieve(question, mode="hybrid", k=10):
     use_keyword = mode in ("keyword_only", "hybrid", "hybrid_rerank")
     pool = max(k, RERANK_POOL) if mode == "hybrid_rerank" else k
 
-    v = vector_search(question) if use_vector else []
-    kw = keyword_search(question) if use_keyword else []
+    with ThreadPoolExecutor(max_workers=2) as ex:
+        fv = ex.submit(vector_search, question) if use_vector else None
+        fk = ex.submit(keyword_search, question) if use_keyword else None
+        v = fv.result() if fv else []
+        kw = fk.result() if fk else []
     merged = rrf_merge([lst for lst in (v, kw) if lst], k=RRF_K)[:pool]
     texts = fetch_chunks([cid for cid, _ in merged])
     hits = [

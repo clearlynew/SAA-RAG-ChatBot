@@ -3,7 +3,7 @@
     {
       "id": "q001",
       "question": "Which Amazon EC2 instance family is specifically engineered for deep learning inference workloads?",
-      "answer": "Inf2 Instances are purpose-built for deep learning inference [1].",
+      "answer": "Inf2 Instances are purpose-built for deep learning inference workloads [1].",
       "refused": false,
       "reason": null,
       "no_citations": false,
@@ -15,12 +15,12 @@
       "sources": [
         "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Compute"
       ],
-      "latency_ms": 7750
+      "latency_ms": 5913
     },
     {
       "id": "q003",
       "question": "What object storage service provides 11 9s of data durability along with lifecycle tiering and WORM compliance via Object Lock?",
-      "answer": "Amazon Simple Storage Service (Amazon S3) provides 11 9s of data durability along with lifecycle tiering and WORM compliance via Object Lock [1][2][3].",
+      "answer": "Amazon Simple Storage Service (Amazon S3) provides 11 9s of data durability along with lifecycle tiering and WORM compliance via Object Lock [1][2].",
       "refused": false,
       "reason": null,
       "no_citations": false,
@@ -31,10 +31,9 @@
       },
       "sources": [
         "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Storage",
-        "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Storage",
-        "[3] aws-overview > Overview of Amazon Web Services > AWS services by category > Storage"
+        "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Storage"
       ],
-      "latency_ms": 6144
+      "latency_ms": 5303
     },
     {
       "id": "q005",
@@ -51,12 +50,12 @@
       "sources": [
         "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Storage"
       ],
-      "latency_ms": 6041
+      "latency_ms": 5424
     },
     {
       "id": "q007",
       "question": "Which key-value and document NoSQL database provides single-digit millisecond performance at high scale?",
-      "answer": "Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale [1][2].",
+      "answer": "Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale. [1][2]",
       "refused": false,
       "reason": null,
       "no_citations": false,
@@ -69,12 +68,12 @@
         "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Databases",
         "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Databases"
       ],
-      "latency_ms": 5355
+      "latency_ms": 4501
     },
     {
       "id": "q009",
       "question": "Which serverless interactive query service lets users analyze S3 data directly using standard SQL syntax?",
-      "answer": "Amazon Athena lets users analyze S3 data directly using standard SQL syntax [1][2][3].",
+      "answer": "Amazon Athena is the serverless interactive query service that lets users analyze S3 data directly using standard SQL syntax [1][2].",
       "refused": false,
       "reason": null,
       "no_citations": false,
@@ -85,10 +84,9 @@
       },
       "sources": [
         "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Analytics",
-        "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Analytics",
-        "[3] generative-ai-lens > Generative AI Lens > Sustainability > Consume sustainable data processing and storage services"
+        "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Analytics"
       ],
-      "latency_ms": 6246
+      "latency_ms": 4952
     },
     {
       "id": "q011",
@@ -106,12 +104,12 @@
         "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Machine Learning (ML) and Artificial Intelligence (AI)",
         "[3] aws-overview > Overview of Amazon Web Services > AWS services by category > Machine Learning (ML) and Artificial Intelligence (AI)"
       ],
-      "latency_ms": 6043
+      "latency_ms": 4977
     },
     {
       "id": "q013",
       "question": "In a Retrieval-Augmented Generation (RAG) system, what purpose does the Vector Data Store serve?",
-      "answer": "In a Retrieval-Augmented Generation (RAG) system, the Vector Data Store serves the purpose of efficient storage and retrieval of high-dimensional vector embeddings, which are used in semantic search and retrieval tasks to ground the language model's responses with relevant information from a corpus of documents [1].",
+      "answer": "The Vector Data Store serves the purpose of efficient storage and retrieval of high-dimensional vector embeddings [1].",
       "refused": false,
       "reason": null,
       "no_citations": false,
@@ -123,12 +121,12 @@
       "sources": [
         "[1] generative-ai-lens > Generative AI Lens > Definitions"
       ],
-      "latency_ms": 5982
+      "latency_ms": 4607
     },
     {
       "id": "q015",
       "question": "What is the main role of a Multi-Tenant Enterprise AI Gateway when deployed in front of foundation models?",
-      "answer": "The main role of a Multi-Tenant Enterprise AI Gateway when deployed in front of foundation models is to securely route inference requests across multiple foundation models and deployment backends [3].",
+      "answer": "The main role of a Multi-Tenant Enterprise AI Gateway is to securely route inference requests across multiple foundation models and deployment backends [3].",
       "refused": false,
       "reason": null,
       "no_citations": false,
@@ -140,7 +138,7 @@
       "sources": [
         "[3] generative-ai-lens > Generative AI Lens > Scenarios > Multi-tenant generative AI platform scenario"
       ],
-      "latency_ms": 5734
+      "latency_ms": 4931
     },
     {
       "id": "q017",
@@ -158,7 +156,7 @@
         "[1] generative-ai-lens > Generative AI Lens > Scenarios > Multi-tenant generative AI platform scenario",
         "[2] aws-overview > Overview of Amazon Web Services > AWS services by category > Security, identity, and compliance"
       ],
-      "latency_ms": 6049
+      "latency_ms": 5364
     },
     {
       "id": "q019",
@@ -175,12 +173,12 @@
       "sources": [
         "[1] generative-ai-lens > Generative AI Lens > Operational excellence > Model performance evaluation"
       ],
-      "latency_ms": 5324
+      "latency_ms": 4812
     },
     {
       "id": "q021",
       "question": "What request strategy should clients adopt to handle Foundation Model quota rate limits (InvocationThrottles) gracefully?",
-      "answer": "Clients should implement request buffering using a message queue service to handle Foundation Model quota rate limits gracefully [1][2][3].",
+      "answer": "Implement request buffering using a message queue service to handle traffic spikes and maintain consistent performance [1].",
       "refused": false,
       "reason": null,
       "no_citations": false,
@@ -190,16 +188,14 @@
         "unsupported_claims": []
       },
       "sources": [
-        "[1] generative-ai-lens > Generative AI Lens > Reliability > Manage throughput quotas",
-        "[2] generative-ai-lens > Generative AI Lens > Reliability > Manage throughput quotas",
-        "[3] generative-ai-lens > Generative AI Lens > Reliability > Manage throughput quotas"
+        "[1] generative-ai-lens > Generative AI Lens > Reliability > Manage throughput quotas"
       ],
-      "latency_ms": 5777
+      "latency_ms": 5350
     },
     {
       "id": "q023",
       "question": "What feature gives developers step-by-step insight into the reasoning paths and tool calls executed by autonomous AI agents?",
-      "answer": "Tracing provides a detailed view of the agent's step-by-step reasoning process [1].",
+      "answer": "Tracing provides developers with step-by-step insight into the reasoning paths and tool calls executed by autonomous AI agents [1][3].",
       "refused": false,
       "reason": null,
       "no_citations": false,
@@ -209,9 +205,10 @@
         "unsupported_claims": []
       },
       "sources": [
-        "[1] generative-ai-lens > Generative AI Lens > Operational excellence > Observability in workloads"
+        "[1] generative-ai-lens > Generative AI Lens > Operational excellence > Observability in workloads",
+        "[3] generative-ai-lens > Generative AI Lens > Operational excellence > Observability in workloads"
       ],
-      "latency_ms": 5829
+      "latency_ms": 5221
     },
     {
       "id": "q025",
@@ -228,12 +225,12 @@
       "sources": [
         "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Compute"
       ],
-      "latency_ms": 5631
+      "latency_ms": 4916
     },
     {
       "id": "q027",
       "question": "Which shared network drive can many servers and containers read and write at the same time?",
-      "answer": "Amazon EFS can be read and written by many servers and containers at the same time [1].",
+      "answer": "Amazon EFS can be read and written to by many servers and containers simultaneously [1].",
       "refused": false,
       "reason": null,
       "no_citations": false,
@@ -245,12 +242,12 @@
       "sources": [
         "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Storage"
       ],
-      "latency_ms": 4914
+      "latency_ms": 4097
     },
     {
       "id": "q029",
       "question": "How can I block malicious web requests such as SQL injection before they reach my AI application?",
-      "answer": "You can block malicious web requests such as SQL injection before they reach your AI application using AWS WAF [1].",
+      "answer": "Use AWS WAF to block malicious web requests such as SQL injection before they reach your AI application [1].",
       "refused": false,
       "reason": null,
       "no_citations": false,
@@ -262,7 +259,7 @@
       "sources": [
         "[1] aws-overview > Overview of Amazon Web Services > AWS services by category > Security, identity, and compliance"
       ],
-      "latency_ms": 5314
+      "latency_ms": 5017
     }
   ],
   "out": [
@@ -276,7 +273,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 3871
+      "latency_ms": 2764
     },
     {
       "id": "o002",
@@ -288,7 +285,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 3583
+      "latency_ms": 2457
     },
     {
       "id": "o003",
@@ -300,7 +297,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 3583
+      "latency_ms": 2654
     },
     {
       "id": "o004",
@@ -312,7 +309,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 3024
+      "latency_ms": 2259
     },
     {
       "id": "o005",
@@ -324,7 +321,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 4011
+      "latency_ms": 3378
     },
     {
       "id": "o006",
@@ -336,7 +333,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 4329
+      "latency_ms": 3583
     },
     {
       "id": "o007",
@@ -348,7 +345,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 3789
+      "latency_ms": 2945
     },
     {
       "id": "o008",
@@ -360,7 +357,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 3788
+      "latency_ms": 2994
     },
     {
       "id": "o009",
@@ -369,10 +366,10 @@
       "refused": true,
       "reason": "model_refused",
       "no_citations": false,
-      "top_judge_score": 10.0,
+      "top_judge_score": 7.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 4787
+      "latency_ms": 3912
     },
     {
       "id": "o010",
@@ -384,7 +381,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 3917
+      "latency_ms": 3096
     },
     {
       "id": "o011",
@@ -396,7 +393,7 @@
       "top_judge_score": 5.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 5425
+      "latency_ms": 4359
     },
     {
       "id": "o012",
@@ -408,7 +405,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 3482
+      "latency_ms": 2766
     },
     {
       "id": "o013",
@@ -420,7 +417,7 @@
       "top_judge_score": 8.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 4606
+      "latency_ms": 3890
     },
     {
       "id": "o014",
@@ -432,7 +429,7 @@
       "top_judge_score": 0.0,
       "grounding": null,
       "sources": [],
-      "latency_ms": 3584
+      "latency_ms": 2764
     }
   ]
 }
