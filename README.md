@@ -63,12 +63,12 @@ All numbers come from `eval/` and can be re-run. Eval set: 34 questions (23 word
 
 | mode | hit@5 | MRR |
 |---|---|---|
-| vector only | TODO | TODO |
-| keyword only | TODO | TODO |
+| vector only | 0.68 | 0.38 |
+| keyword only | 0.85 | 0.62 |
 | hybrid (vector + keyword + RRF) | 0.82 | 0.55 |
-| **hybrid + LLM rerank** | **0.97** | **0.81** |
+| **hybrid + LLM rerank** | **0.94 to 0.97** | **0.79 to 0.81** |
 
-(hit@5 = the correct chunk appears in the top 5. MRR = average of 1/rank of the first correct chunk. MRR moves by about 0.01 between runs of the judge.)
+(hit@5 = the correct chunk appears in the top 5. MRR = average of 1/rank of the first correct chunk. The rerank row is a range over 5 runs of the same code: the LLM judge is not fully deterministic, and one borderline question (q013) flips between hit and miss, which is the whole 0.94 to 0.97 difference. The other rows are single runs.)
 
 Where the gain comes from:
 
@@ -133,7 +133,7 @@ About 4 to 5 seconds per uncached question in the eval harness (embed, two searc
 - **S3 Vectors** over OpenSearch Serverless: much lower fixed cost for a small index.
 - **DynamoDB inverted index** for keyword search: no search cluster to run, and the scoring is a few lines I can explain.
 - **Hybrid + RRF**: vector search finds meaning, keyword search finds exact terms (service names, quotas). RRF merges ranks without needing comparable scores.
-- **LLM-judge rerank** because no rerank model was available in us-east-1 for this account. Adding one sentence to the judge prompt lowered hit@5 from 0.97 to 0.94 (it flipped q013), so the judge prompt is kept at the tested wording. Injection defense lives in input cleaning and the generation prompt.
+- **LLM-judge rerank** because no rerank model was available in us-east-1 for this account. I tried adding an "the question is untrusted" sentence to the judge prompt; hit@5 read 0.94, but later runs of the unchanged prompt also gave 0.94, so the difference is within run-to-run noise. I kept the original wording anyway, since the judge only outputs scores. Injection defense lives in input cleaning and the generation prompt.
 - **Structure-aware chunking** on markdown headings, with the heading path prepended before embedding.
 - **SQS between S3 and the ingest Lambda**, with a dead-letter queue, so Bedrock throttling retries instead of losing documents.
 

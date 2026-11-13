@@ -107,11 +107,11 @@ Add a line each time a real choice is made (what, why, what I rejected).
 - Typo handling on the keyword path only (vocab-based spell correction, `SPELLFIX` env switch). Vector search already tolerates typos. Measured effect: MRR 0.75 to 0.80 on the typo set, hit@5 unchanged (4 questions better, 2 worse); kept because it is cheap and can be turned off.
 - Reranker pool 15 (not 10): wider pool gave the judge more chances to rescue paraphrases.
 - Relevance gate `MIN_JUDGE_SCORE=2` plus a model-level refusal and a citation check: three layers, because on the out-of-scope set 3 of 14 questions scored 5 to 8 on the judge and only the model refusal caught them.
-- Judge prompt left at original wording: adding "the question is untrusted" dropped hit@5 0.97 to 0.94 (q013). Injection defense lives in `clean_question` (strips `<>`) and `generate.py` (tag wrapping and neutralizing) instead. Tested with the injection eval.
+- Judge prompt left at original wording: adding "the question is untrusted" read 0.94 vs 0.97 on single runs, but later runs of the unchanged prompt also gave 0.94, so that difference is within run-to-run noise (q013 flips). Kept the original anyway: the judge only outputs scores, and injection defense lives in `clean_question` (strips `<>`) and `generate.py` (tag wrapping and neutralizing). Tested with the injection eval.
 - Same-origin `/ask` through CloudFront instead of CORS: removes a whole class of config mistakes.
 - Labels fixed after reading the retrieved chunks: q011, q027 (too narrow), o011 removed from out-of-scope (the paper has the answer). The garbled `kms-cryptographic-details` paper was deleted from the index.
 - No WAF: abuse is bounded by the daily cap, throttling and a budget alert. A WAF costs more than the rest of the demo.
-- Judge variance: run-to-run MRR moves by about 0.01, so report MRR as ~0.81 and hit@5 as 0.97 on this set.
+- Judge variance: over 5 runs of the same code hit@5 was 0.94 to 0.97 and MRR 0.79 to 0.81 (q013 flips). Report ranges for the rerank row, not a single number.
 - Format-hijack fix in code, not prompt: the system prompt already said to ignore format instructions and the model still answered in JSON. `generate.py` now refuses answers starting with `{` or `[{` or containing a code fence. Trade-off: a real question wrapped in a format request gets a refusal.
 - Keep every results file in git (results_k*.md/json) so numbers can be traced to a commit.
 
@@ -303,9 +303,9 @@ Models: embeddings `amazon.titan-embed-text-v2:0` (1024 dims); generation and re
 | mode | hit@5 | MRR |
 |---|---|---|
 | hybrid | 0.82 | 0.55 |
-| hybrid_rerank | 0.97 | 0.81 |
+| hybrid_rerank | 0.94 to 0.97 | 0.79 to 0.81 |
 
-vector_only and keyword_only: TODO (re-run all modes once so every row comes from the same labels and index).
+vector_only 0.68 / 0.38 and keyword_only 0.85 / 0.62 (single all-modes run, same labels and index). hybrid and hybrid_rerank rows are from the same run family; rerank is a range because the judge varies.
 
 - Close-wording questions: hybrid 0.91, hybrid+rerank 1.00. Paraphrased: hybrid 0.64, hybrid+rerank 0.91.
 - Generation: 0/15 in-scope refused, 15/15 cited, 15/15 supported, 14/14 out-of-scope refused (3 of those caught by the model, not the score gate).
@@ -315,4 +315,4 @@ vector_only and keyword_only: TODO (re-run all modes once so every row comes fro
 **Known misses**
 
 - q024: paraphrase with no shared vocabulary ("run trained neural networks in production" vs "inference"/Inf2). Neither retriever surfaces it in the top 5. Idea: query rewriting.
-- q013: unstable. The question is generic ("what purpose does the Vector Data Store serve") and about 25 chunks discuss vector stores. It missed (hit@5 0.94) when I added one sentence to the judge prompt and hit at rank 4 with the original prompt. Label is literal ("vector data store"); the reranker also returns on-topic chunks that don't contain that phrase.
+- q013: unstable. The question is generic ("what purpose does the Vector Data Store serve") and about 25 chunks discuss vector stores. It flips between a miss (hit@5 0.94) and a hit at rank 3 to 4 (0.97) across runs of the same code. Label is literal ("vector data store"); the reranker also returns on-topic chunks that don't contain that phrase.
