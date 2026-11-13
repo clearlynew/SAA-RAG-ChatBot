@@ -16,3 +16,24 @@ module "ingest" {
   docstats_table     = module.storage.docstats_table
   table_arns         = module.storage.table_arns
 }
+
+module "api" {
+  source = "./modules/api"
+
+  project            = var.project
+  vector_bucket_name = module.storage.vector_bucket_name
+  vector_index_name  = module.storage.vector_index_name
+  vector_index_arn   = module.storage.vector_index_arn
+  chunks_table       = module.storage.chunks_table
+  terms_table        = module.storage.terms_table
+  docstats_table     = module.storage.docstats_table
+  cache_table        = module.storage.cache_table
+  table_arns         = module.storage.table_arns
+  cache_table_arn    = module.storage.cache_table_arn
+}
+
+module "frontend" {
+  source       = "./modules/frontend"
+  project      = var.project
+  api_endpoint = module.api.api_url
+}

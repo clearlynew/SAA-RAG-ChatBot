@@ -15,3 +15,4 @@ output "table_arns" {
     aws_dynamodb_table.docstats.arn,
   ]
 }
+output "cache_table_arn" { value = aws_dynamodb_table.cache.arn }

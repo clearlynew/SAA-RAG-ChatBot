@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<title>AWS Whitepaper Q&amp;A</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #5f6368; --card: #f6f7f9;
+    --border: #d9dce1; --accent: #1a5fb4; --danger: #b3261e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14161a; --fg: #e8eaed; --muted: #9aa0a6; --card: #1d2026;
+            --border: #3a3f47; --accent: #7ab0ff; --danger: #f2b8b5; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.5rem; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  .row { display: flex; gap: 8px; }
+  input { flex: 1; min-width: 0; padding: 12px; font: inherit; color: var(--fg);
+          background: var(--card); border: 1px solid var(--border); border-radius: 8px; }
+  button { font: inherit; cursor: pointer; border-radius: 8px; }
+  #ask { padding: 12px 20px; border: 0; background: var(--accent); color: #fff; font-weight: 600; }
+  #ask:disabled { opacity: .55; cursor: not-allowed; }
+  .meta { display: flex; justify-content: space-between; color: var(--muted);
+          font-size: .85rem; margin: 6px 2px 16px; }
+  .examples { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .examples button { padding: 6px 12px; font-size: .9rem; color: var(--fg);
+                     background: var(--card); border: 1px solid var(--border); }
+  #result { display: none; background: var(--card); border: 1px solid var(--border);
+            border-radius: 10px; padding: 16px 18px; }
+  #answer { white-space: pre-wrap; margin: 0 0 12px; }
+  #status { color: var(--muted); }
+  #status.error { color: var(--danger); }
+  .refused { border-left: 4px solid var(--muted); }
+  sup.cite { color: var(--accent); font-weight: 600; }
+  h2 { font-size: .95rem; margin: 14px 0 6px; color: var(--muted); }
+  ul { margin: 0; padding-left: 20px; font-size: .92rem; }
+  footer { margin-top: 32px; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>AWS Whitepaper Q&amp;A</h1>
+  <p class="sub">Ask a question about AWS. Answers come only from the indexed whitepapers, with sources you can check.</p>
+
+  <div class="row">
+    <input id="q" type="text" maxlength="500" autocomplete="off"
+           placeholder="e.g. How does key rotation work in KMS?" aria-label="Your question">
+    <button id="ask" type="button">Ask</button>
+  </div>
+  <div class="meta"><span id="status" role="status" aria-live="polite"></span><span id="count">0 / 500</span></div>
+
+  <div class="examples" id="examples"></div>
+
+  <section id="result" aria-live="polite">
+    <p id="answer"></p>
+    <div id="sourcesBox">
+      <h2>Sources</h2>
+      <ul id="sources"></ul>
+    </div>
+  </section>
+
+  <footer>
+    Indexed: AWS Overview of Amazon Web Services, AWS KMS Best Practices, AWS Security Best Practices,
+    and the AWS Well-Architected Generative AI Lens. If the papers do not cover a question, it says so
+    instead of guessing, but always check the cited source. Not affiliated with AWS.
+  </footer>
+</main>
+
+<script>
+(function () {
+  var input = document.getElementById("q");
+  var btn = document.getElementById("ask");
+  var statusEl = document.getElementById("status");
+  var countEl = document.getElementById("count");
+  var result = document.getElementById("result");
+  var answerEl = document.getElementById("answer");
+  var sourcesEl = document.getElementById("sources");
+  var sourcesBox = document.getElementById("sourcesBox");
+
+  var EXAMPLES = [
+    "How does key rotation work in KMS?",
+    "What is a key alias used for in AWS KMS?",
+    "How can I block malicious web requests such as SQL injection before they reach my AI application?",
+    "Which AWS database is built for measurements that are recorded over time?"
+  ];
+
+  EXAMPLES.forEach(function (text) {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.textContent = text.length > 52 ? text.slice(0, 50) + "…" : text;
+    b.title = text;
+    b.addEventListener("click", function () { input.value = text; updateCount(); ask(); });
+    document.getElementById("examples").appendChild(b);
+  });
+
+  function updateCount() { countEl.textContent = input.value.length + " / 500"; }
+  input.addEventListener("input", updateCount);
+  input.addEventListener("keydown", function (e) { if (e.key === "Enter") ask(); });
+  btn.addEventListener("click", ask);
+
+  function setStatus(msg, isError) {
+    statusEl.textContent = msg || "";
+    statusEl.className = isError ? "error" : "";
+  }
+
+  // Turn "[1]" / "[2][3]" / "[1, 3]" into small superscripts, using DOM nodes (never innerHTML).
+  function renderAnswer(text) {
+    answerEl.textContent = "";
+    var re = /\[(\d+(?:\s*,\s*\d+)*)\]/g, last = 0, m;
+    while ((m = re.exec(text)) !== null) {
+      answerEl.appendChild(document.createTextNode(text.slice(last, m.index)));
+      var sup = document.createElement("sup");
+      sup.className = "cite";
+      sup.textContent = "[" + m[1].replace(/\s+/g, "") + "]";
+      answerEl.appendChild(sup);
+      last = re.lastIndex;
+    }
+    answerEl.appendChild(document.createTextNode(text.slice(last)));
+  }
+
+  function renderSources(list) {
+    sourcesEl.textContent = "";
+    (list || []).forEach(function (s) {
+      var li = document.createElement("li");
+      li.textContent = "[" + s.n + "] " + s.doc + " › " + s.heading_path;
+      sourcesEl.appendChild(li);
+    });
+    sourcesBox.style.display = (list && list.length) ? "block" : "none";
+  }
+
+  var busy = false;
+  async function ask() {
+    var question = input.value.trim();
+    if (busy || !question) return;
+    busy = true; btn.disabled = true;
+    setStatus("Searching the whitepapers… the first question can take 10–15 seconds.");
+    result.style.display = "none";
+
+    var ctrl = new AbortController();
+    var timer = setTimeout(function () { ctrl.abort(); }, 35000);
+    try {
+      var res = await fetch("/ask", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ question: question }),
+        signal: ctrl.signal
+      });
+      var data = {};
+      try { data = await res.json(); } catch (e) {}
+      if (!res.ok) {
+        var msg = data.error || "Something went wrong. Please try again.";
+        if (res.status === 429 && !data.error) msg = "Too many requests right now. Please wait a few seconds.";
+        setStatus(msg, true);
+        return;
+      }
+      renderAnswer(data.answer || "");
+      renderSources(data.sources);
+      result.className = data.refused ? "refused" : "";
+      result.style.display = "block";
+      var secs = (data.latency_ms / 1000).toFixed(1);
+      setStatus(data.cached ? "Answered from cache." : "Answered in " + secs + " s.");
+    } catch (e) {
+      setStatus(e.name === "AbortError" ? "That took too long. Please try again."
+                                       : "Could not reach the server. Check your connection.", true);
+    } finally {
+      clearTimeout(timer);
+      busy = false; btn.disabled = false;
+    }
+  }
+})();
+</script>
+</body>
+</html>
